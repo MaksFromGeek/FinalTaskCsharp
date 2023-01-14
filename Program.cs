@@ -6,7 +6,11 @@
 string[] firstArray = {"goodbye", "last", "live", "hi", "app"};
 string[] secondArray = new string [firstArray.Length];
 
-
+FindWords(firstArray, secondArray);
+System.Console.WriteLine($"Наш массив состоит из слов: ");
+PrintArray(firstArray);
+System.Console.WriteLine($"На выходе получаем: ");
+PrintArray(secondArray);
 
 void FindWords(string[] firstArray, string[] secondArray)
 {
@@ -19,4 +23,9 @@ void FindWords(string[] firstArray, string[] secondArray)
         }
 }
 
-
+void PrintArray(string[] array)
+{
+    for(int i = 0; i < array.Length; i++) 
+        System.Console.Write($"{array[i]} ");
+    System.Console.WriteLine();
+}
