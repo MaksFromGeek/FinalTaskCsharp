@@ -8,4 +8,14 @@ string[] secondArray = new string [firstArray.Length];
 
 
 
+void FindWords(string[] firstArray, string[] secondArray)
+{
+    int count = 0;
+    for(int i = 0; i < firstArray.Length; i++)
+        if(firstArray[i].Length <= 3)
+        {
+
+        }
+}
+
 
