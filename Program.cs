@@ -14,7 +14,8 @@ void FindWords(string[] firstArray, string[] secondArray)
     for(int i = 0; i < firstArray.Length; i++)
         if(firstArray[i].Length <= 3)
         {
-
+            secondArray[count] = firstArray[i];
+            count++;
         }
 }
 
